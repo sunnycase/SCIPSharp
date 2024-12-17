@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>libortki</id>
+    <version>0.0.2</version>
+    <title>libortki</title>
+    <authors>FusionBolt</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache</license>
+    <description>ortki binary</description>
+    <dependencies>
+      <group targetFramework="netstandard2.0">
+        <dependency id="libortki-win" version="0.0.2" include="native" />
+        <dependency id="libortki-osx" version="0.0.2" include="native" />
+        <dependency id="libortki-osx-arm64" version="0.0.2" include="native" />
+        <dependency id="libortki-linux" version="0.0.2" include="native" />
+      </group>
+    </dependencies>
+  </metadata>
+
+  <files>
+    <!-- A dummy reference which prevents NuGet from adding any compilation references when this package is imported -->
+    <file src="_._" target="lib\netstandard2.0" />
+  </files>
+</package>

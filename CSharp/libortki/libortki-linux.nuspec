@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>libortki-linux</id>
+    <version>0.0.2</version>
+    <title>libortki-linux</title>
+    <authors>FusionBolt</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache</license>
+    <description>ortki linux binary</description>
+  </metadata>
+  <files>
+<!--  I don't known why full install path is ~/work/OrtKI/OrtKI/install/lib/x86_64-linux-gnu -->
+    <file src="..\..\install\lib64\libortki.so" target="runtimes\linux-x64\native"/>
+    <file src="_._" target="lib\netstandard2.0" />
+  </files>
+</package>
